@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://saassynergie.github.io/observatoire-geo/sitemap.xml

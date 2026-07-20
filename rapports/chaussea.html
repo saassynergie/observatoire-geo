@@ -10,99 +10,203 @@
 <meta property="og:description" content="Scan de visibilité IA (GEO) de Chaussea : taux de citation 0 %, part de voix 0 % face aux concurrents dans les réponses de ChatGPT/Gemini. Mesure reproductible, prompt par prompt.">
 <meta property="og:type" content="article">
 <meta property="og:url" content="https://saassynergie.github.io/observatoire-geo/rapports/chaussea.html">
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"Chaussea est-elle cit\u00e9e par ChatGPT et Gemini ? \u2014 Visibilit\u00e9 IA mesur\u00e9e","description":"Scan de visibilit\u00e9 IA (GEO) de Chaussea : taux de citation 0 %, part de voix 0 % face aux concurrents dans les r\u00e9ponses de ChatGPT/Gemini. Mesure reproductible, prompt par prompt.","datePublished":"2026-07-20","author":{"@type":"Organization","name":"SaaS Synergie"},"publisher":{"@type":"Organization","name":"SaaS Synergie"},"mainEntityOfPage":"https://saassynergie.github.io/observatoire-geo/rapports/chaussea.html"}</script>
-<style>:root{--ink:#0e1116;--muted:#5b6472;--line:#e6e8ec;--brand:#0b5fff;--bad:#e5484d;--ok:#2fa96b;--warn:#e0a100;--bg:#fff;--soft:#f6f8fb}
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700;800&family=Geist+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Chaussea est-elle citée par ChatGPT et Gemini ? — Visibilité IA mesurée", "description": "Scan de visibilité IA (GEO) de Chaussea : taux de citation 0 %, part de voix 0 % face aux concurrents dans les réponses de ChatGPT/Gemini. Mesure reproductible, prompt par prompt.", "datePublished": "2026-07-20", "author": {"@type": "Organization", "name": "SaaS Synergie"}, "publisher": {"@type": "Organization", "name": "SaaS Synergie"}, "mainEntityOfPage": "https://saassynergie.github.io/observatoire-geo/rapports/chaussea.html"}</script>
+<style>
+:root{
+  --bg:#fbfbf9; --panel:#ffffff; --ink:#0c0d0f; --ink2:#33363c; --muted:#71757c;
+  --line:#e9e8e3; --line2:#f1f0eb;
+  --ok:#0f7a4d; --ok-soft:#e7f4ec; --bad:#c1322f; --bad-soft:#fbeae9; --warn:#9a6a10; --warn-soft:#f8f0dd;
+  --track:#edece7; --bar-comp:#c9c8c1; --bar-lead:#8f8e86; --bar-target:#0c0d0f;
+  --mono:'Geist Mono',ui-monospace,SFMono-Regular,Menlo,monospace;
+  --sans:'Geist',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
+  --r:14px;
+}
 *{box-sizing:border-box;margin:0;padding:0}
-body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;color:var(--ink);line-height:1.55;background:var(--bg);-webkit-font-smoothing:antialiased}
-.wrap{max-width:860px;margin:0 auto;padding:0 20px}
-header{padding:22px 0;border-bottom:1px solid var(--line)}
-header a{text-decoration:none;color:inherit}
-.logo{font-weight:700;letter-spacing:-.02em;font-size:17px}
-.logo span{color:var(--brand)}
-.crumb{font-size:13px;color:var(--muted);padding:18px 0 0}
-.crumb a{color:var(--brand);text-decoration:none}
-.hero{padding:34px 0 20px}
-.badge{display:inline-block;font-size:12px;font-weight:600;color:var(--brand);background:#eaf1ff;border-radius:999px;padding:5px 12px;margin-bottom:16px}
-.badge.bad{color:var(--bad);background:#fdeaea}.badge.ok{color:var(--ok);background:#e8f6ee}.badge.warn{color:var(--warn);background:#fbf3dd}
-h1{font-size:32px;line-height:1.15;letter-spacing:-.03em;margin-bottom:14px}
-.sub{font-size:18px;color:var(--muted);max-width:640px;margin-bottom:24px}
-.kpis{display:flex;gap:26px;flex-wrap:wrap;margin:22px 0 6px}
-.kpi .big{font-size:38px;font-weight:700;letter-spacing:-.02em}
-.kpi .big.bad{color:var(--bad)}.kpi .big.ok{color:var(--ok)}.kpi .big.warn{color:var(--warn)}
-.kpi small{display:block;font-size:13px;color:var(--muted)}
-section{padding:38px 0;border-top:1px solid var(--line)}
-h2{font-size:23px;letter-spacing:-.02em;margin-bottom:12px}
-.lead{color:var(--muted);margin-bottom:20px;max-width:640px}
-table{width:100%;border-collapse:collapse;font-size:15px;margin-top:8px}
-th,td{text-align:left;padding:10px 8px;border-bottom:1px solid var(--line)}
-th{font-size:12px;text-transform:uppercase;letter-spacing:.03em;color:var(--muted)}
-tr.target td{font-weight:700;background:var(--soft)}
-td.num{text-align:right;font-variant-numeric:tabular-nums}
-.verdict{font-size:15px;padding:16px 18px;border-radius:12px;margin-top:6px}
-.verdict.bad{background:#fdeaea;color:#a3282c}.verdict.ok{background:#e8f6ee;color:#1d7048}.verdict.warn{background:#fbf3dd;color:#8a6400}
-ul.prompts{list-style:none;display:grid;gap:8px}
-ul.prompts li{padding:11px 14px;background:var(--soft);border:1px solid var(--line);border-radius:9px;font-size:14px;color:var(--ink)}
-.cta{display:inline-block;background:var(--brand);color:#fff;text-decoration:none;font-weight:600;font-size:16px;padding:14px 26px;border-radius:10px}
-.cta.secondary{background:transparent;color:var(--brand);border:1px solid var(--brand);margin-left:8px}
-.note{font-size:13px;color:var(--muted);margin-top:12px}
-.disc{font-size:12px;color:var(--muted);margin-top:20px;line-height:1.5}
-.grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}
-@media(max-width:640px){.grid{grid-template-columns:1fr}h1{font-size:26px}}
-.rcard{border:1px solid var(--line);border-radius:12px;padding:18px;background:var(--soft);text-decoration:none;color:inherit;display:block;transition:transform .05s}
-.rcard:hover{transform:translateY(-1px)}
-.rcard h3{font-size:16px;margin-bottom:2px}
-.rcard .cat{font-size:12px;color:var(--muted);margin-bottom:12px}
-.rcard .b{font-size:28px;font-weight:700}.rcard .b.bad{color:var(--bad)}.rcard .b.ok{color:var(--ok)}.rcard .b.warn{color:var(--warn)}
-footer{padding:40px 0 60px;border-top:1px solid var(--line);color:var(--muted);font-size:13px}
+html{-webkit-text-size-adjust:100%}
+body{font-family:var(--sans);color:var(--ink);background:var(--bg);line-height:1.55;
+  -webkit-font-smoothing:antialiased;font-feature-settings:"ss01","cv01";text-rendering:optimizeLegibility}
+.wrap{max-width:788px;margin:0 auto;padding:0 24px}
+a{color:inherit}
+
+/* top bar */
+.top{border-bottom:1px solid var(--line);background:rgba(251,251,249,.86);backdrop-filter:saturate(180%) blur(8px);
+  position:sticky;top:0;z-index:5}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;height:58px}
+.brand{display:flex;align-items:center;gap:9px;text-decoration:none;font-weight:600;letter-spacing:-.01em;font-size:15px}
+.brand .mk{width:9px;height:9px;border-radius:2px;background:var(--ink);display:inline-block;transform:rotate(45deg)}
+.brand em{font-style:normal;color:var(--muted);font-weight:500}
+.top nav a{color:var(--muted);text-decoration:none;font-size:14px;font-weight:500}
+.top nav a:hover{color:var(--ink)}
+
+.crumb{font-family:var(--mono);font-size:12px;color:var(--muted);padding:26px 0 0;letter-spacing:.01em}
+.crumb a{color:var(--muted);text-decoration:none}
+.crumb a:hover{color:var(--ink)}
+
+/* status label */
+.status{display:inline-flex;align-items:center;gap:8px;font-family:var(--mono);font-size:12px;font-weight:500;
+  padding:6px 11px;border-radius:999px;letter-spacing:.02em;text-transform:uppercase;border:1px solid transparent}
+.status .dot{width:7px;height:7px;border-radius:50%}
+.status.ok{color:var(--ok);background:var(--ok-soft);border-color:#cfe8da}.status.ok .dot{background:var(--ok)}
+.status.bad{color:var(--bad);background:var(--bad-soft);border-color:#f2ccca}.status.bad .dot{background:var(--bad)}
+.status.warn{color:var(--warn);background:var(--warn-soft);border-color:#eaddb6}.status.warn .dot{background:var(--warn)}
+
+.hero{padding:24px 0 6px}
+.eyebrow{font-family:var(--mono);font-size:12.5px;color:var(--muted);margin:20px 0 12px;letter-spacing:.01em}
+h1{font-size:40px;line-height:1.08;letter-spacing:-.033em;font-weight:700;max-width:16ch;margin-bottom:16px}
+.sub{font-size:18px;color:var(--ink2);max-width:60ch;line-height:1.5}
+
+/* KPI strip */
+.kpis{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line);border:1px solid var(--line);
+  border-radius:var(--r);overflow:hidden;margin:30px 0 4px}
+.kpi{background:var(--panel);padding:20px 20px 18px}
+.kpi .big{font-family:var(--mono);font-size:34px;font-weight:600;letter-spacing:-.02em;line-height:1}
+.kpi .big.ok{color:var(--ok)}.kpi .big.bad{color:var(--bad)}.kpi .big.warn{color:var(--warn)}
+.kpi small{display:block;font-size:12.5px;color:var(--muted);margin-top:10px;letter-spacing:.005em}
+
+section{padding:40px 0;border-top:1px solid var(--line)}
+.sec-k{font-family:var(--mono);font-size:12px;color:var(--muted);text-transform:uppercase;letter-spacing:.06em;margin-bottom:10px}
+h2{font-size:24px;letter-spacing:-.02em;font-weight:650;margin-bottom:12px}
+.lead{color:var(--muted);margin-bottom:24px;max-width:62ch;font-size:15.5px}
+
+/* verdict */
+.verdict{font-size:16.5px;line-height:1.6;padding:22px 24px;border-radius:var(--r);border:1px solid var(--line);
+  background:var(--panel);position:relative}
+.verdict::before{content:"";position:absolute;left:0;top:16px;bottom:16px;width:3px;border-radius:3px}
+.verdict.ok::before{background:var(--ok)}.verdict.bad::before{background:var(--bad)}.verdict.warn::before{background:var(--warn)}
+.verdict b{font-weight:650}
+
+/* share-of-voice bars */
+.chart{display:flex;flex-direction:column;gap:13px;margin-top:4px}
+.bar{display:grid;grid-template-columns:160px 1fr 46px;align-items:center;gap:16px}
+.bar .lab{font-size:14px;font-weight:500;text-align:right;color:var(--ink2);line-height:1.25}
+.bar.tgt .lab{color:var(--ink);font-weight:650}
+.bar .tag{display:block;font-family:var(--mono);font-size:9.5px;font-weight:600;color:var(--muted);letter-spacing:.06em;margin-top:2px}
+.bar .track{height:24px;background:transparent;border-radius:6px;position:relative}
+.bar .fill{height:100%;border-radius:6px;background:var(--bar-comp);min-width:3px;transition:width .4s ease}
+.bar.lead .fill{background:var(--bar-lead)}
+.bar.tgt .fill{background:var(--bar-target)}
+.bar .val{font-family:var(--mono);font-size:14px;font-weight:500;color:var(--ink2);text-align:right}
+.bar.tgt .val{color:var(--ink);font-weight:600}
+.bar.zero .track{background:repeating-linear-gradient(45deg,var(--bad-soft),var(--bad-soft) 6px,transparent 6px,transparent 12px);
+  border:1px dashed #e6b9b7;border-radius:6px}
+.bar.zero .val{color:var(--bad)}
+.bar .zerolab{font-family:var(--mono);font-size:11.5px;color:var(--bad);font-weight:500;position:absolute;left:11px;top:50%;transform:translateY(-50%)}
+.legend{display:flex;gap:22px;flex-wrap:wrap;margin-top:22px;font-size:12px;color:var(--muted);font-family:var(--mono)}
+.legend span{display:inline-flex;align-items:center;gap:7px}
+.legend i{width:12px;height:12px;border-radius:3px;display:inline-block}
+
+/* detail table (rank) */
+.tbl{width:100%;border-collapse:collapse;font-size:14.5px;margin-top:8px}
+.tbl th,.tbl td{text-align:left;padding:11px 10px;border-bottom:1px solid var(--line2)}
+.tbl th{font-family:var(--mono);font-size:11px;text-transform:uppercase;letter-spacing:.05em;color:var(--muted);font-weight:500}
+.tbl td.n{text-align:right;font-family:var(--mono);font-variant-numeric:tabular-nums}
+.tbl tr.tgt td{font-weight:650;background:var(--line2)}
+
+/* prompts */
+ul.prompts{list-style:none;display:grid;gap:9px}
+ul.prompts li{padding:14px 16px;background:var(--panel);border:1px solid var(--line);border-radius:11px;
+  font-size:14.5px;color:var(--ink2);display:flex;gap:12px;align-items:flex-start}
+ul.prompts li::before{content:"?";font-family:var(--mono);font-weight:600;color:var(--muted);flex:0 0 auto;
+  width:22px;height:22px;border-radius:6px;background:var(--line2);display:grid;place-items:center;font-size:12px}
+
+/* CTA band */
+.cta-band{background:var(--ink);color:#fff;border-radius:18px;padding:38px 34px;margin-top:8px}
+.cta-band h2{color:#fff;margin-bottom:10px}
+.cta-band p{color:#b9bbc0;max-width:54ch;margin-bottom:22px;font-size:15.5px}
+.btn{display:inline-flex;align-items:center;gap:8px;background:#fff;color:var(--ink);text-decoration:none;
+  font-weight:600;font-size:15px;padding:13px 22px;border-radius:10px;transition:transform .06s}
+.btn:hover{transform:translateY(-1px)}
+.btn.ghost{background:transparent;color:#fff;border:1px solid #3a3d44;margin-left:10px}
+.disc{font-size:12.5px;color:var(--muted);margin-top:24px;line-height:1.6;max-width:70ch}
+
+/* report index cards */
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:6px}
+.rcard{border:1px solid var(--line);border-radius:var(--r);padding:22px;background:var(--panel);text-decoration:none;
+  color:inherit;display:flex;flex-direction:column;gap:14px;transition:border-color .12s,transform .06s}
+.rcard:hover{border-color:#d8d7d0;transform:translateY(-1px)}
+.rcard .cat{font-family:var(--mono);font-size:11.5px;color:var(--muted);text-transform:uppercase;letter-spacing:.04em}
+.rcard h3{font-size:19px;letter-spacing:-.02em;font-weight:650}
+.rcard .row{display:flex;align-items:baseline;justify-content:space-between;margin-top:auto;padding-top:6px}
+.rcard .b{font-family:var(--mono);font-size:30px;font-weight:600;letter-spacing:-.02em}
+.rcard .b.ok{color:var(--ok)}.rcard .b.bad{color:var(--bad)}.rcard .b.warn{color:var(--warn)}
+.rcard .sv{font-family:var(--mono);font-size:12px;color:var(--muted)}
+.note{font-family:var(--mono);font-size:13px;color:var(--muted);margin-top:26px}
+.note a{color:var(--ink)}
+
+footer{padding:44px 0 64px;border-top:1px solid var(--line);color:var(--muted);font-size:13px;margin-top:20px}
+footer b{color:var(--ink2)}
+footer .fmono{font-family:var(--mono);font-size:12px;margin-top:8px;display:block}
+
+@media(max-width:640px){
+  h1{font-size:29px}
+  .kpis{grid-template-columns:1fr}
+  .grid{grid-template-columns:1fr}
+  .bar{grid-template-columns:104px 1fr 52px;gap:10px}
+  .bar .lab{font-size:13px}
+  .cta-band{padding:28px 22px}
+  .btn.ghost{margin-left:0;margin-top:10px}
+}
 </style>
 </head>
 <body>
-<header><div class="wrap"><a href="../index.html" class="logo">SaaS <span>Synergie</span> · Observatoire GEO</a></div></header>
+<div class="top"><div class="wrap">
+  <a href="../index.html" class="brand"><span class="mk"></span>SaaS Synergie <em>· Observatoire GEO</em></a>
+  <nav><a href="index.html">Rapports</a> &nbsp; <a href="../index.html#scan">Scan gratuit</a></nav>
+</div></div>
 <div class="wrap">
-  <div class="crumb"><a href="../index.html">Accueil</a> › <a href="index.html">Rapports</a> › Chaussea</div>
+  <div class="crumb"><a href="../index.html">accueil</a> / <a href="index.html">rapports</a> / chaussea</div>
   <div class="hero">
-    <span class="badge bad">Visibilité IA mesurée · Enseigne de chaussures</span>
-    <h1>Chaussea est-elle citée quand un client interroge ChatGPT ou Gemini ?</h1>
-    <p class="sub">On a posé 10 requêtes d'intention d'achat sur la vente de chaussures en ligne à un moteur IA, puis mesuré si Chaussea est cité, à quel rang, et sa part de voix face aux concurrents. Voici le résultat brut, prompt par prompt.</p>
+    <div class="eyebrow">Rapport de visibilité IA · Enseigne de chaussures · mesuré le 2026-07-20</div>
+    <h1>Chaussea apparaît-elle quand un client interroge ChatGPT&nbsp;?</h1>
+    <p class="sub">On a posé 10 requêtes d'intention d'achat sur la vente de chaussures en ligne à un moteur IA, puis mesuré si Chaussea est citée, à quel rang, et sa part de voix face aux concurrents. Voici le résultat brut.</p>
     <div class="kpis">
-      <div class="kpi"><span class="big bad">0%</span><small>taux de citation IA</small></div>
-      <div class="kpi"><span class="big bad">0%</span><small>part de voix</small></div>
-      <div class="kpi"><span class="big">—</span><small>rang moyen quand cité</small></div>
+      <div class="kpi"><div class="big bad">0%</div><small>taux de citation IA</small></div>
+      <div class="kpi"><div class="big">0%</div><small>part de voix</small></div>
+      <div class="kpi"><div class="big">—</div><small>rang moyen quand citée</small></div>
     </div>
+    <div style="margin-top:18px"><span class="status bad"><span class="dot"></span>Invisible</span></div>
   </div>
 </div>
-<section>
-  <div class="wrap">
-    <h2>Verdict</h2>
-    <div class="verdict bad">🔴 Chaussea est <b>invisible</b> dans les réponses IA de sa catégorie : citée dans <b>0 %</b> des réponses testées, alors que Zalando l'est dans <b>80 %</b>. Concrètement, un client qui demande conseil à ChatGPT ou Gemini sur la vente de chaussures en ligne ne verra jamais Chaussea. C'est le manque à combler le plus urgent.</div>
+<section><div class="wrap">
+  <div class="sec-k">Verdict</div>
+  <div class="verdict bad"><b>Chaussea est invisible</b> dans les réponses IA de sa catégorie : citée dans <b>0 %</b> des réponses testées, quand Zalando l'est dans <b>80 %</b>. Concrètement, un client qui demande conseil à ChatGPT ou Gemini sur la vente de chaussures en ligne ne verra <b>jamais</b> Chaussea. C'est le manque à combler le plus urgent.</div>
+</div></section>
+<section><div class="wrap">
+  <div class="sec-k">Part de voix</div>
+  <h2>Qui l'IA cite face à Chaussea</h2>
+  <p class="lead">Poids de chaque marque dans l'ensemble des marques citées, agrégé sur 10 réponses. Plus la barre est longue, plus l'IA pousse cette marque au moment de la décision d'achat.</p>
+  <div class="chart"><div class="bar lead"><div class="lab">Zalando</div><div class="track"><div class="fill" style="width:100.0%"></div></div><div class="val">38 %</div></div><div class="bar "><div class="lab">Spartoo</div><div class="track"><div class="fill" style="width:60.5%"></div></div><div class="val">23 %</div></div><div class="bar "><div class="lab">Sarenza</div><div class="track"><div class="fill" style="width:60.5%"></div></div><div class="val">23 %</div></div><div class="bar "><div class="lab">Gemo</div><div class="track"><div class="fill" style="width:36.8%"></div></div><div class="val">14 %</div></div><div class="bar tgt zero"><div class="lab">Chaussea<span class="tag">CETTE MARQUE</span></div><div class="track zero-t"><span class="zerolab">◇ non citée par l'IA</span></div><div class="val">0 %</div></div><div class="bar zero"><div class="lab">La Halle</div><div class="track zero-t"><span class="zerolab">◇ non citée par l'IA</span></div><div class="val">0 %</div></div><div class="bar zero"><div class="lab">Besson</div><div class="track zero-t"><span class="zerolab">◇ non citée par l'IA</span></div><div class="val">0 %</div></div></div>
+  <div class="legend">
+    <span><i style="background:var(--bar-target)"></i>Chaussea</span>
+    <span><i style="background:var(--bar-lead)"></i>Leader de citation</span>
+    <span><i style="background:var(--bar-comp)"></i>Autres concurrents</span>
   </div>
-</section>
-<section>
-  <div class="wrap">
-    <h2>Part de voix face aux concurrents</h2>
-    <p class="lead">Classement mesuré sur 10 réponses. La part de voix = poids de la marque dans l'ensemble des marques citées.</p>
-    <table>
-      <tr><th>Marque</th><th class="num">Citation</th><th class="num">Part de voix</th><th class="num">Rang moyen</th></tr>
-      <tr class=""><td>Zalando</td><td class="num">80 %</td><td class="num">38 %</td><td class="num">1.12</td></tr><tr class=""><td>Spartoo</td><td class="num">50 %</td><td class="num">23 %</td><td class="num">2.2</td></tr><tr class=""><td>Sarenza</td><td class="num">50 %</td><td class="num">23 %</td><td class="num">2.4</td></tr><tr class=""><td>Gemo</td><td class="num">30 %</td><td class="num">14 %</td><td class="num">2.67</td></tr><tr class="target"><td>Chaussea <b>(cette marque)</b></td><td class="num">0 %</td><td class="num">0 %</td><td class="num">—</td></tr><tr class=""><td>La Halle</td><td class="num">0 %</td><td class="num">0 %</td><td class="num">—</td></tr><tr class=""><td>Besson</td><td class="num">0 %</td><td class="num">0 %</td><td class="num">—</td></tr>
-    </table>
+</div></section>
+<section><div class="wrap">
+  <div class="sec-k">Détail</div>
+  <h2>Citation, part de voix et rang moyen</h2>
+  <table class="tbl">
+    <tr><th>Marque</th><th class="n">Citation</th><th class="n">Part de voix</th><th class="n">Rang moyen</th></tr>
+    <tr class=""><td>Zalando</td><td class="n">80 %</td><td class="n">38 %</td><td class="n">1.12</td></tr><tr class=""><td>Spartoo</td><td class="n">50 %</td><td class="n">23 %</td><td class="n">2.2</td></tr><tr class=""><td>Sarenza</td><td class="n">50 %</td><td class="n">23 %</td><td class="n">2.4</td></tr><tr class=""><td>Gemo</td><td class="n">30 %</td><td class="n">14 %</td><td class="n">2.67</td></tr><tr class="tgt"><td>Chaussea</td><td class="n">0 %</td><td class="n">0 %</td><td class="n">—</td></tr><tr class=""><td>La Halle</td><td class="n">0 %</td><td class="n">0 %</td><td class="n">—</td></tr><tr class=""><td>Besson</td><td class="n">0 %</td><td class="n">0 %</td><td class="n">—</td></tr>
+  </table>
+</div></section>
+<section><div class="wrap">
+  <div class="sec-k">Protocole</div>
+  <h2>Les requêtes d'achat testées</h2>
+  <p class="lead">Ce sont des questions qu'un vrai client se pose avant d'acheter. Si l'IA ne cite pas la marque ici, elle est absente au moment de la décision.</p>
+  <ul class="prompts"><li>Où acheter des chaussures pas chères pour toute la famille en ligne en France ?</li><li>Quelle enseigne française de chaussures propose le meilleur rapport qualité-prix ?</li><li>Je cherche un site pour acheter des baskets et chaussures de sport en ligne en France, lequel choisir ?</li><li>Meilleurs magasins de chaussures en ligne en France avec livraison et retour gratuits ?</li><li>Quelle marque ou enseigne de chaussures pour enfants acheter en ligne en France ?</li></ul>
+</div></section>
+<section><div class="wrap">
+  <div class="cta-band">
+    <h2>Et votre marque&nbsp;?</h2>
+    <p>Ce rapport a été généré avec notre scanner de visibilité IA. On fait le même sur votre marque, gratuitement, et on vous montre comment combler l'écart si vous êtes mal positionné.</p>
+    <a class="btn" href="../index.html#scan">Demander mon scan gratuit</a>
+    <a class="btn ghost" href="index.html">Voir les autres rapports</a>
   </div>
-</section>
-<section>
-  <div class="wrap">
-    <h2>Les requêtes d'achat testées</h2>
-    <p class="lead">Ce sont des questions qu'un vrai client se pose avant d'acheter. Si l'IA ne cite pas la marque ici, elle est absente au moment de la décision.</p>
-    <ul class="prompts"><li>Où acheter des chaussures pas chères pour toute la famille en ligne en France ?</li><li>Quelle enseigne française de chaussures propose le meilleur rapport qualité-prix ?</li><li>Je cherche un site pour acheter des baskets et chaussures de sport en ligne en France, lequel choisir ?</li><li>Meilleurs magasins de chaussures en ligne en France avec livraison et retour gratuits ?</li><li>Quelle marque ou enseigne de chaussures pour enfants acheter en ligne en France ?</li></ul>
-  </div>
-</section>
-<section>
-  <div class="wrap">
-    <h2>Votre marque aussi ?</h2>
-    <p class="lead">Ce rapport a été généré avec notre scanner de visibilité IA. On peut faire le même sur votre marque, gratuitement, et vous montrer comment on comble l'écart si vous êtes mal positionné.</p>
-    <a class="cta" href="../index.html#scan">Demander mon scan gratuit</a>
-    <a class="cta secondary" href="index.html">Voir les autres rapports</a>
-    <p class="disc">Méthodo : mesure de la présence de marque dans les réponses génératives (moteur IA, mémoire associative) sur des requêtes d'intention d'achat, agrégée sur 10 réponses pour lisser l'aléa. Les scores varient selon le moteur et la formulation. Mesure du 2026-07-20. Aucune donnée inventée : ce rapport reflète les réponses réellement obtenues.</p>
-  </div>
-</section>
-<footer><div class="wrap"><b>SaaS Synergie</b> — Observatoire de visibilité IA (GEO). Présence de marque dans ChatGPT, Gemini et les moteurs de réponse IA.</div></footer>
+  <p class="disc">Méthodo : mesure de la présence de marque dans les réponses génératives (moteur IA, mémoire associative) sur des requêtes d'intention d'achat, agrégée sur 10 réponses pour lisser l'aléa. Les scores varient selon le moteur et la formulation. Mesure du 2026-07-20. Aucune donnée inventée : ce rapport reflète les réponses réellement obtenues.</p>
+</div></section>
+<footer><div class="wrap"><b>SaaS Synergie</b> — Observatoire de visibilité IA (GEO).
+<span class="fmono">Présence de marque dans ChatGPT, Gemini et les moteurs de réponse IA.</span></div></footer>
 </body>
 </html>
